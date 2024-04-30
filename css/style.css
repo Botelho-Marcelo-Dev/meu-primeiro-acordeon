@@ -98,8 +98,6 @@ main {
     }
 
     .container-acordeon p {
-        height: 0;
-        opacity: 0;
         margin-bottom: 10px;
         font-size: 22px;
         margin: 0px 30px 15px 30px;
@@ -107,7 +105,7 @@ main {
     
     .container-acordeon p.selecionado {
         opacity: 1;
-        height: 65px;
+        height: 75px;
     }
 
     .person {
@@ -127,6 +125,10 @@ main {
 }
 
 @media (max-width: 500px) {
+    .container {
+        height: 700px;
+    }
+
     .person {
         width: 280px;
         height: 295px;
@@ -134,5 +136,10 @@ main {
         position: relative;
         top: -50px;
         right: -70px;
+    }
+
+    .container-acordeon p {
+        margin-bottom: 10px;
+        font-size: 19px;
     }
 }
